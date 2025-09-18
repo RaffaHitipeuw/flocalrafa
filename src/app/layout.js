@@ -1,7 +1,16 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const helveticaNow = localFont({
+  src: [
+    {
+      path: '../../public/asset/font/HelveticaNowDisplay-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-helvetica',
+})
 
 export const metadata = {
   title: '2025©',
@@ -11,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className={helveticaNow.className} suppressHydrationWarning>
         {children}
       </body>
     </html>

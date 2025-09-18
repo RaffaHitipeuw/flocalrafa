@@ -1,6 +1,6 @@
-
-body{
-    margin: 0px;
-    overflow: hidden;
-    cursor: wait;
+body {
+  margin: 0;
+  overflow: hidden;
+  cursor: wait;
+  background-color: #141516; /* tambahin ini */
 }
